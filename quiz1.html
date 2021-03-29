@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Document</title>
+    </head>
+    <body>
+        <button onclick="myFunction()">Try it</button>
+
+        <script type="text/javascript">
+            function myFunction() {
+            var btn = document.createElement("BUTTON");
+                btn.innerHTML = "Change this document.";
+            document.body.appendChild(btn);
+            btn.setAttribute("id", "myBtn");
+            document.getElementById('myBtn').addEventListener("click", change);
+        }
+            
+            function change(){
+            var header=document.getElementById("H1");                    
+                header.innerHTML = "CSIE@CGU";     
+            var para=document.getElementById("P");         
+                para.innerHTML = "怎麼那麼棒！！.";
+
+        }
+        </script>
+  
+        <h1 Id="H1">CGU</h1>   
+        <p Id="P">好棒棒!</p>
+
+
+
+    </body>
+</html>
